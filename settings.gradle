@@ -1,0 +1,3 @@
+rootProject.name = 'hazelCastTest'
+include 'http2netty_server'
+
