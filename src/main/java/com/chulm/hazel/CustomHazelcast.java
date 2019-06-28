@@ -1,9 +1,9 @@
-package HazleCast;
+package com.chulm.hazel;
 
 import com.hazelcast.config.*;
 import com.hazelcast.core.*;
 
-public class customHazelcast {
+public class CustomHazelcast {
 
     private HazelcastInstance instance = null;
 
@@ -17,13 +17,8 @@ public class customHazelcast {
     /// hazelCast MemberLister
     // Clusteing되는 서버 의 추가/삭제/업데이트에 대한 이벤트는 memberShipEvent이다.
     // userMultiMap에 추가되는 이벤트를 수신하기 위해 멤버리스너에 C
-    private HazelcastMemberLister memberLister ;
-    private MultiMap<Object,Object> userMultiMap;
-
-    public customHazelcast() {
-
-    }
-
+    private HazelcastMemberLister memberLister;
+    private MultiMap<Object, Object> userMultiMap;
 
     public void setConfig() {
 
@@ -68,7 +63,7 @@ public class customHazelcast {
             memberLister = new HazelcastMemberLister(instance);
             cluster.addMembershipListener(memberLister);
             userMultiMap = instance.getMultiMap("user");
-            userMultiMap.addEntryListener(memberLister,true);
+            userMultiMap.addEntryListener(memberLister, true);
         }
         return instance;
     }

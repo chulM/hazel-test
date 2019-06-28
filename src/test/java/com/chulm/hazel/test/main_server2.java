@@ -1,9 +1,8 @@
-//HazelCast version is 3.10.5
+package com.chulm.hazel.test;//HazelCast version is 3.10.5
 
-import HazleCast.customHazelcast;
+import com.chulm.hazel.CustomHazelcast;
 import com.hazelcast.core.*;
 
-import java.awt.image.SampleModel;
 import java.util.Map;
 import java.util.Set;
 
@@ -11,7 +10,7 @@ public class main_server2 implements MessageListener<Object> {
 
     public static void main(String[] args) throws InterruptedException {
 
-        customHazelcast custom = new customHazelcast();
+        CustomHazelcast custom = new CustomHazelcast();
 //        custom.setConfig();
         custom.getInstance();
 

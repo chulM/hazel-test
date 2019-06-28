@@ -1,4 +1,4 @@
-package HazleCast;
+package com.chulm.hazel;
 
 import com.hazelcast.core.*;
 
