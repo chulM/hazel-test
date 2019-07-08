@@ -1,4 +1,4 @@
-package com.chulm.hazel.test;
+package com.chulm.hazel.test.basic;
 
 import com.chulm.hazel.CustomHazelcast;
 import com.hazelcast.core.*;

@@ -9,6 +9,7 @@ import com.hazelcast.core.Pipelining;
 import java.util.List;
 import java.util.Random;
 
+// 파이프라인 기법을 통한 성능 최적화
 public class DemoPipeline {
 
     private HazelcastInstance member;

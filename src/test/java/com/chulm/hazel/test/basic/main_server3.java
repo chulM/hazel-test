@@ -1,4 +1,4 @@
-package com.chulm.hazel.test;//HazelCast version is 3.10.5
+package com.chulm.hazel.test.basic;//HazelCast version is 3.10.5
 
 import com.chulm.hazel.CustomHazelcast;
 
